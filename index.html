@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>JULSING BOODSCHAPPEN BV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #666;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 180px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav button {
+            margin: 5px;
+            padding: 10px 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #ddd;
+        }
+
+        nav button:hover {
+            background-color: #bbb;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            padding: 12px;
+            background-color: #666;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #ddd;
+            text-align: center;
+            padding: 15px;
+        }
+
+        a {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Julsing Boodschappen BV logo">
+    <h1>JULSING BOODSCHAPPEN BV</h1>
+    <p>Door Lukas en Thomas Julsing</p>
+
+    <nav>
+        <button onclick="scrollToSection('doelen')">Doelen</button>
+        <button onclick="scrollToSection('overons')">Over ons</button>
+        <button onclick="scrollToSection('bestellen')">Bestellen</button>
+<button onclick="scrollToSection('bezorgtijd')">bezorgtijd</button>
+        <button onclick="scrollToSection('prijzen')">Prijzen</button>
+        <button onclick="scrollToSection('aanpak')">Aanpak</button>
+        <button onclick="scrollToSection('kaart')">Bezorggebied</button>
+    </nav>
+</header>
+
+<main>
+
+    <section id="doelen">
+        <h2>Onze doelen</h2>
+        <p>Bij JULSING BOODSCHAPPEN BV willen wij het boodschappen doen makkelijk en leuk maken voor mensen in onze buurt. Ons idee is dat je niet zelf naar de winkel hoeft te gaan, maar dat wij het voor je regelen – helemaal duurzaam en klimaatvriendelijk!</p>
+
+        <p>Wij houden van fietsen en van de Albert Heijn. Dus dachten we: waarom niet gewoon fietsen naar de winkel en de boodschappen bij mensen thuis bezorgen? Zo doen we iets wat wij leuk vinden en helpen we tegelijk anderen.</p>
+
+        <p>Als we voor 2027 100 euro hebben verdiend, gaan we kleding met ons logo dragen, om het nog professioneler te maken.</p>
+
+        <p>Onze belangrijkste doelen:</p>
+        <ul>
+            <li><strong>Duurzaamheid:</strong> alles wordt klimaatneutraal bezorgd, dus geen auto’s die vervuilen want we kunnen ook nog niet autorijden ;).</li>
+            <li><strong>Betrouwbaarheid:</strong> wij komen op tijd en zorgen dat alles klopt.</li>
+            <li><strong>Toegankelijkheid:</strong> via onze Gmail kan je bestellen!</li>
+            <li><strong>Einddoel:</strong> onze eigen onderneming uitbreiden!</li>
+        </ul>
+
+        <p>Wij hopen dat we hiermee de buurt beter leren kennen en vrolijkheid brengen!</p>
+    </section>
+
+    <section id="overons">
+        <h2>Over ons</h2>
+        <p>Wij zijn Lukas (13) en Thomas (9) Julsing, we zitten allebei op school en we houden van fietsen en van de albertheijn. die twee dingen wouden we combineren maar je kan niet elke dag 100 keer naar de albert heijn om iets te kopen. dan is het geld zo op. dus bedachte we om voor mensen het te kopen en dan naar hun huis brengen! zo hoeft u niet boodschappen te doen en kunnen wij onze hobbies uitvoeren!</p>
+
+        <p>Met onze fiets halen wij boodschappen bij Albert Heijn Eeldewolde en bezorgen deze volledig klimaatneutraal bij onze klanten thuis, tot aan de deur. Zo combineren wij onze hobby’s met hulp voor jullie!.</p>
+
+        <p>Wij staan te popelen om u te helpen! Het is ons doel om boodschappen doen makkelijker te maken, terwijl we tegelijkertijd duurzaam bezig zijn en plezier hebben in wat we doen.</p>
+    </section>
+
+    <section id="bestellen">
+        <h2>Bestellen</h2>
+        <p>Bestellen kan via ons Gmail-adres: <strong><a href="mailto:julsingboodschappenbv@gmail.com">julsingboodschappenbv@gmail.com</a></strong></p>
+        <p>Stuur uw bestelling minimaal <strong>één dag van tevoren</strong>, omdat wij allebei ook school hebben.</p>
+        <p><em>Let op: na het klikken op “Verstuur bestelling” opent uw e-mailprogramma. Verstuur de e-mail om de bestelling definitief te plaatsen.</em></p>
+
+        <h3>Bestelformulier</h3>
+        <form action="mailto:julsingboodschappenbv@gmail.com" method="post" enctype="text/plain">
+            <label>Naam</label>
+            <input type="text" name="Naam" required>
+
+            <label>Adres</label>
+            <input type="text" name="Adres" required>
+
+            <label>Boodschappenlijst</label>
+            <textarea name="Boodschappen" rows="5" required></textarea>
+
+            <button type="submit">Verstuur bestelling</button>
+        </form>
+    </section>
+
+  <section id="bezorgtijd">
+        <h2>bezorgtijd</h2>
+        <p>zodra je besteld hebt sturen we een berichtje terug en stemmen we af over de bezorg tijd.<p>
+           </section>
+
+
+    <section id="prijzen">
+        <h2>Prijzen</h2>
+        <p>Wij rekenen een vaste marge van <strong>10%</strong> bovenop de winkelprijs van de boodschappen na dat we de boodschappen bij u hebben geleverd betaald u direct via een tikkie. wij kopen <strong>geen medicijnen, energie drankjes en achohol</strong> de maximale prijs is rond de 50 euro.</p>
+        <p><strong>Voorbeeld:</strong><br>Kost uw boodschappen €10 in de winkel?<br>Dan betaalt u bij ons €11.</p>
+        <p>Deze marge gebruiken wij voor onze tijd en het bezorgen. Alles gebeurt volledig <strong>klimaatneutraal</strong>.</p>
+    </section>
+
+    <section id="aanpak">
+        <h2>Hoe gaan we dat aanpakken?</h2>
+        <p>U stuurt ons uw boodschappenlijst per e-mail. Wij fietsen naar de Albert Heijn, halen de boodschappen en bezorgen deze daarna bij u thuis, tot aan de deur.</p>
+    </section>
+
+    <section id="kaart">
+    <h2>Bezorggebied</h2>
+    <p>Wij bezorgen alleen in de buurt van <strong>Albert Heijn Eelderwolde</strong>.</p>
+    <p>
+        Bekijk de winkel op Google Maps: 
+        <a href="https://www.google.com/maps/search/?api=1&query=Albert+Heijn+Borchsingel+25+Eelderwolde" target="_blank">
+            Albert Heijn Eelderwolde
+        </a>
+    </p>
+
+    <p style="margin-top:15px;"><strong>Wij bezorgen uitsluitend in:</strong></p>
+    <ul>
+        <li>Piccardthofwijk</li>
+        <li>Tuinwijk</li>
+        <li>Jufferwijk</li>
+        <li>Waterwijk</li>
+    </ul>
+
+    <p>Woont u buiten deze wijken? Dan kunnen wij uw bestelling helaas (nog) niet aannemen.</p>
+</section>
+
+
+
+
+
+</main>
+
+<footer>
+    <p>© 2025 JULSING BOODSCHAPPEN BV</p>
+</footer>
+
+<script>
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+</body>
+</html>
